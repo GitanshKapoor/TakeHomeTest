@@ -24,6 +24,7 @@
 Screenshot of the agent reporting metrics to Datadog:
 
 <hr>
+
 ### Q2. Host Monitoring with Custom Monitor
 
 Task: Create a Datadog monitor that alerts if CPU usage exceeds 90% for more than 5 minutes. The alert should include tags and notify a dummy email address or Slack webhook.
@@ -35,6 +36,7 @@ Required - Monitor Configuration :
 Screenshot of the Monitor or JSON/YAML configuration:
 
 <hr>
+
 ### Q3. APM Setup for a Sample Application
 
 Task: Set up APM for a basic application (Node.js, Python, or Java).
@@ -73,6 +75,7 @@ app.listen(port, () => {
 Screenshot of APM Services page:
 
 <hr>
+
 ### Q4. Basic APM Usage
 
 Task: Generate some traffic or test calls and show a sample trace view.
@@ -91,6 +94,7 @@ This trace data helps identify performance bottlenecks, such as high latency in 
 Screenshot of trace view:
 
 <hr>
+
 ### Q5. Dashboard Creation
 
 Task: Create a dashboard with the following widgets:
@@ -114,6 +118,7 @@ Task: Create a dashboard with the following widgets:
 Screenshot of the dashboard:
 
 <hr>
+
 ## Section 2: Troubleshooting Scenarios
 ### Q6. Agent Not Reporting Metrics
 
@@ -143,6 +148,7 @@ cat /etc/datadog-agent/datadog.yaml | grep api_key
 
 Ensures that the correct API key is configured to send data to the Datadog account.
 <hr>
+
 ### Q7. APM Data Missing
 
 Task: Your app has the APM library installed, but no data appears in Datadog APM. What could be the possible reasons?
@@ -154,6 +160,8 @@ Task: Your app has the APM library installed, but no data appears in Datadog APM
 **Incorrect Service Name Configuration:** Verify that the service name in the configuration matches the one in Datadog APM.
 
 **Network Connectivity Issues:** Ensure that the application can reach the Datadog APM endpoints.
+
+<hr>
 
 ### Q8. Monitor Didn’t Trigger Alert
 
