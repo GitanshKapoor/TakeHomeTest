@@ -8,11 +8,27 @@
 
 - **Commands used:**
 ```bash
-  # Example for Ubuntu
+  # Update the apt package index
   sudo apt-get update
-  sudo apt-get install -y datadog-agent
+  
+  # Install required dependencies
+  sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+  
+  # Add the Datadog repository
+  DD_REPO="https://apt.datadoghq.com"
+  echo "deb $DD_REPO stable 7" | sudo tee -a /etc/apt/sources.list.d/datadog.list
+  
+  # Import the Datadog GPG key
+  curl -L https://keys.datadoghq.com/DATADOG_APT_KEY.public | sudo apt-key add -
+  
+  # Install the Datadog Agent
+  sudo apt-get update && sudo apt-get install -y datadog-agent
+
+  sudo nano /etc/datadog-agent/datadog.yaml [api_key: <YOUR_API_KEY>]
+
+  # Start the Datadog Agent
   sudo systemctl start datadog-agent
-  sudo systemctl enable datadog-agent
+
 ```
 
 - **Verification Command:**
