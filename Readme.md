@@ -201,6 +201,4 @@ Task: A monitor was set up correctly, but no alert was received even when the co
 
 **Alert Condition Not Triggered:** Ensure the metric used in the alert query is correct and data points are being collected.
 
-**No Notification Settings:** Verify that email or Slack notification settings are configured properly.
-
 **Monitor Mute::** Check if the monitor was muted for maintenance or during a specific time window.
