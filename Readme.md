@@ -37,8 +37,8 @@
   datadog-agent status
 ```
 
-<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image1.png"/>
 <img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image2.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image1.png"/>
 
 <hr>
 
@@ -50,7 +50,11 @@ Required - Monitor Configuration :
 - CPU usage exceeds 90% for more than 5 minutes 
 - The alert should include tags and notify a dummy email address or Slack webhook 
 
-Screenshot of the Monitor or JSON/YAML configuration:
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image3.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image4.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image5.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image6.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image7.png"/>
 
 <hr>
 
@@ -89,7 +93,7 @@ app.listen(port, () => {
 ```
 
 
-Screenshot of APM Services page:
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image8.png"/>
 
 <hr>
 
@@ -108,7 +112,7 @@ Sample Trace Attributes:
 Explanation of the trace data:
 This trace data helps identify performance bottlenecks, such as high latency in service calls. In this case, the latency of 200ms may indicate a delay in the request-response cycle which could be due to network or application-related issues.
 
-Screenshot of trace view:
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image9.png"/>
 
 <hr>
 
@@ -134,7 +138,7 @@ Task: Create a dashboard with the following widgets:
 
 Screenshot of the dashboard:
 
-<hr>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image10.png"/>
 
 ## Section 2: Troubleshooting Scenarios
 ### Q6. Agent Not Reporting Metrics
