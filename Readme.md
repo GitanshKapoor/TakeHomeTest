@@ -37,7 +37,8 @@
   datadog-agent status
 ```
 
-Screenshot of the agent reporting metrics to Datadog:
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image1.png"/>
+<img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image2.png"/>
 
 <hr>
 
