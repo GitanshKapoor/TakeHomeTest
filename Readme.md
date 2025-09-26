@@ -101,16 +101,25 @@ app.listen(port, () => {
 
 Task: Generate some traffic or test calls and show a sample trace view.
 
-Sample Trace Attributes:
+- Trace View and Key Trace Attribute
 
-- Trace ID: 12345
+From the Datadog APM trace data for service my-nodejs-app, here are some key observations:
 
-- Latency: 200ms
+- Latency: Most requests show latencies ranging from ~600μs to 5.76ms
 
-- Error: false
+- Status Code: All requests returned HTTP 200 OK, indicating no errors currently
 
-Explanation of the trace data:
-This trace data helps identify performance bottlenecks, such as high latency in service calls. In this case, the latency of 200ms may indicate a delay in the request-response cycle which could be due to network or application-related issues.
+- Operation Names: Includes GET requests and internal operations like handle and "anonymous"
+
+- Span Counts: Multiple spans per trace indicate calls broken down into sub-operations
+
+Explanation: Troubleshooting with Trace Data
+
+- Latency Data:
+The latency metrics help identify which endpoints or internal operations might be slower than expected. For example, if you observe some requests jumping to 500ms or higher (instead of a few ms), this suggests a bottleneck. You could then investigate further which span (e.g., a database query or external API call) is responsible for the delay.
+
+- Span Details:
+Each trace includes child spans representing sub-operations or services. This granularity helps you see which parts of your app (such as database queries, external calls, or business logic) contribute to latency or errors, enabling targeted debugging.
 
 <img src="https://github.com/GitanshKapoor/TakeHomeTest/blob/main/Image9.png"/>
 
